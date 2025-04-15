@@ -1,0 +1,46 @@
+body {
+    font-family: roboto, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 500px 200px;
+    grid-template-rows: 40px 80px 400px;
+}
+
+.header {
+    background-color: green;
+}
+
+.search-bar {
+    background-color: aqua;
+}
+
+.accounts {
+    background-color: red;
+}
+
+.side-bar {
+    background-color: yellowgreen;
+    grid-row: span 2;
+}
+
+.greeting {
+    background-color: blueviolet;
+}
+
+.button-bar {
+    background-color: orange;
+}
+
+.main-contents {
+    background-color: yellow;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr
+}
+
+.projects {
+    grid-row: span 2;
+}
