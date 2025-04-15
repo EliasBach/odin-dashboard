@@ -4,7 +4,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 100px 500px 200px;
+    grid-template-columns: 100px 500px 250px;
     grid-template-rows: 40px 80px 400px;
 }
 
@@ -23,6 +23,10 @@ body {
 .side-bar {
     background-color: rgb(214, 250, 142);
     grid-row: span 2;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 15px 85px;
+    grid-template-rows: repeat(10, 40px);
 }
 
 .greeting {
@@ -37,10 +41,23 @@ body {
     background-color: rgb(255, 255, 209);
     grid-column: span 2;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2.2fr 0.8fr;
     grid-template-rows: 1fr 1fr
 }
 
 .projects {
     grid-row: span 2;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    color: blue;
+    border-radius: 5px;
+    border-style: hidden;
+    height: 25px;
+    width: 75px;
 }
