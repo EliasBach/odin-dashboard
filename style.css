@@ -19,7 +19,10 @@ body {
 }
 
 .search-bar {
-
+    display: grid;
+    padding-left: 10px;
+    grid-template-columns: 40px 400px;
+    align-items: center;
 }
 
 input {
@@ -31,7 +34,8 @@ input {
 }
 
 .accounts {
-    
+    display: grid;
+    grid-template-columns: 50px 50px 100px;
 }
 
 .side-bar {
@@ -64,10 +68,6 @@ input {
     grid-template-rows: 1fr 1fr
 }
 
-.projects {
-    grid-row: span 2;
-}
-
 .icon {
     width: 15px;
     height: 15px;
@@ -77,8 +77,8 @@ input {
 }
 
 img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 button {
@@ -91,4 +91,18 @@ button {
     height: 25px;
     width: 60px;
     margin: 10px;
+}
+
+.projects {
+    grid-row: span 2;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    height: 80px;
+    width: 120px;
+    margin: 10px;
+    background-color: white;
 }
