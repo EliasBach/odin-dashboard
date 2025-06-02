@@ -1,6 +1,6 @@
 :root {
     --main-color: rgb(66, 153, 253);
-    --second-color: (224, 204, 24);
+    --second-color: rgb(224, 204, 24);
 }
 
 body {
@@ -15,7 +15,10 @@ body {
 
 .header {
     background-color: var(--main-color);
-    color: white
+    color: white;
+    padding: 10px;
+    font-size: 11px;
+    font-weight: bold;
 }
 
 .search-bar {
@@ -35,7 +38,7 @@ input {
 
 .accounts {
     display: grid;
-    grid-template-columns: 50px 50px 100px;
+    grid-template-columns: 100px 50px 50px;
 }
 
 .side-bar {
@@ -56,7 +59,7 @@ input {
 }
 
 .button-bar {
-    text-align: center;
+    justify-items: center;
     align-content: center;
 }
 
@@ -64,8 +67,9 @@ input {
     background-color: rgb(235, 235, 235);
     grid-column: span 2;
     display: grid;
-    grid-template-columns: 2.2fr 0.8fr;
-    grid-template-rows: 1fr 1fr
+    grid-template-columns: 2.4fr 0.8fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+    padding: 10px;
 }
 
 .icon {
@@ -94,15 +98,46 @@ button {
 }
 
 .projects {
-    grid-row: span 2;
-    padding: 10px;
+    grid-row-start: 2;
+    grid-row-end: 5;
     display: flex;
     flex-wrap: wrap;
 }
 
 .project {
-    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 120px;
     width: 120px;
     margin: 10px;
     background-color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: solid var(--second-color);
+}
+
+.annoucements, .trending {
+    background-color: white;
+    border-radius: 10px;
+    justify-items: center;
+    align-content: center;
+    margin-bottom: 15px;
+}
+
+.announcement {
+    height: 50px;
+    width: 170px;
+    border-top: solid var(--second-color);
+    border-width: 0.2px;
+}
+
+.trend {
+    height: 40px;
+    width: 170px;
+    border-top: solid var(--second-color);
+    border-width: 0.2px;
+}
+
+.first-para {
+    border-style: none;
 }
